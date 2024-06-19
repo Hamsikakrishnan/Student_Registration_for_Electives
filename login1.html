@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="indl.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="cont"> 
+            <form action="connect3.php" method="post">
+                <section class="login">
+                    <h1>LOGIN</h1>
+                    <br>
+                    <label for="roll">ID: </label>
+                    <input type="text" id="roll" name="roll" pattern="[a-zA-Z0-9]+" required>
+                    <br>
+                    <br>
+                    <label for="password">Password  :   </label>
+                    <input type="password" id="password" name="password" minlength="4" maxlength="15" pattern="[a-zA-Z0-9]+" required>
+                    <br>
+                    <br>
+                    <p id = "result"></p>
+                    <input type="submit" value="LOGIN">
+                </section>
+            </form>
+            <!-- <p id="save-el">Previous entries: </p> -->
+        </div>
+    </div>
+    <script src="index.js">
+        
+    </script>
+</body>
+</html>
